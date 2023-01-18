@@ -1,0 +1,178 @@
+body
+{
+    display: flex;
+    height: 125.906735751295336vh;
+    position: relative;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background: rgb(242, 242, 245);
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+nav
+{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    background: black;
+    align-items: center;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+nav img
+{
+    width: 25px;
+    height: 25px;
+}
+
+/*nav .menus
+{
+    width: 300px;
+    position: absolute;
+    right: 250px;
+}*/
+
+nav .menus ul
+{
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+}
+
+.menus ul li:not(.premier)
+{
+    margin-left: 50px;
+    list-style: none;
+}
+
+.menus ul li a
+{
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    
+    text-decoration: none;
+    align-items: center;
+}  
+
+.card-container
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+}
+
+.card-base
+{
+    width: 400px;
+    height: 500px;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.1);
+    transition: 0.25s;
+    background-color: white;
+    overflow: hidden;
+
+}
+
+.card-base:hover
+{
+    box-shadow: 2px 4px 16px rgba(0,0,0,.16);
+    transform: scale3d(1.01,1.01,1.01);
+    cursor: pointer;
+}
+
+.card-base:hover .text-container 
+{
+    transform: translateY(-150px);
+    transition: 0.5s;
+}
+
+.card-base:hover .text-container .description
+{
+    opacity: 1;
+    transition: 0.5s;
+    /*transform: translateY(-170px);*/
+}
+
+.card-base:hover .text-container img
+{
+    opacity: 1;
+    /*transform: translateY(-170px);*/
+}
+
+.titre-card
+{
+    transition: 0.5s;
+    background: linear-gradient(90deg,#0DD081, #35A4A6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    position: relative;
+    top: 200px;
+    font-weight: 800;
+}
+
+.card-base .text-container
+{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.text-container .description
+{
+    vertical-align: center;
+    opacity: 0;
+    position: relative;
+    top: 200px;
+    transition: 0.3s;
+    font-size: 20px;
+    color: gray;
+}
+
+.text-container img
+{
+    position: relative;
+    top: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+footer
+{
+    background-color: black;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 241px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.bouton input:hover, input[value="Choisir"]:hover
+{
+    background: #0075EC;
+}

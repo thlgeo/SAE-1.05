@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Paiement</title>
+    <link rel="icon" href="img/logo apple.png">
+    <link rel="stylesheet" href="assets/form.css">
+    <link rel="stylesheet" href="assets/template.css"> 
+</head>
+<body>
+    <nav>
+        <a href="index.html"><img src="img/logo apple.png" alt="logo"></a>
+        <div class="menus">
+            <ul>
+                <li class="premier"><a href="#" >A propos</a></li>
+                <li><a href="#">Assistance</a></li>
+                <li><a href="connexion.html">Connexion</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <form action="remerciement.html" method="post">
+            <h1>Saisissez vos coordonnées bancaire.</h1>
+            <div class="field">
+                <p>Identité</p>
+                <div class="container-field">
+                    <div class="input-field">
+                        <label>Nom</label>
+                        <input type="text" placeholder="Nom">
+                    </div>
+                    <div class="input-field">
+                        <label>Prénom </label>
+                        <input type="text" placeholder="Prénom">
+                    </div>
+                </div>
+                <div class="container-field">
+                    <div class="input-field">
+                        <label>Numéro de carte</label>
+                        <input type="text" id="CB" placeholder="Numéro carte" style="width:200px" maxlength="20" minlength="20" onkeypress="numCarte(event)">
+                    </div>
+                    <div class="input-field" style="width:400px">
+                        <label>Date d'expiration</label>
+                        <input type="month" id="expiration" value="" placeholder="mm/aa" style="width: 50px;" maxlength="5" minlength="5" onkeypress="dateExp(event)">
+                    </div>
+                    <div class="input-field">
+                        <label>CVC</label>
+                        <input type="text" placeholder="CVC" style="width: 50px;" id="cvc" onkeypress="CVC(event)">
+                    </div>
+                </div>
+                <div class="bouton">
+                    <input type="button" value="Retour" id="retour" onclick="history.back()">
+                    <input type="submit" value="Payer">
+                </div>
+                <p>Somme à payer : 30$</p>
+            </div>
+            <img src="img/cb.png" alt="">
+        </form>
+    </div>
+    <footer class="pied">
+        <div class="list-service">
+            <h1>Services</h1>
+            <ul>
+                <li><a href="#">test</a></li>
+                <li><a href="#">test</a></li>
+                <li><a href="#">test</a></li>
+            </ul>
+        </div>
+        <div class="list-service">
+            <h1>Contact</h1>
+            <ul>
+                <li><a href="#">test</a></li>
+                <li><a href="#">test</a></li>
+                <li><a href="#">test</a></li>
+            </ul>
+        </div>
+        <div class="list-service">
+            <h1>Test</h1>
+            <ul>
+                <li><a href="#">test</a></li>
+                <li><a href="#">test</a></li>
+                <li><a href="#">test</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="assets/script.js"></script>
+</body>
+</html>
