@@ -1,0 +1,77 @@
+.container
+{
+    min-height: 100%;
+    position: relative;
+}
+
+.titre-form
+{
+    background: linear-gradient(90deg,#0DD081, #35A4A6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.title
+{
+    position: absolute;
+    top: 25vh;
+    left: 42vw;
+    font-size: 50px;
+    background: white;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.container img
+{
+    height: 576px;
+}
+
+.form
+{
+    height: 800px;
+    width: 800px;
+    margin-top: 100px;
+    position: relative;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.1);
+    padding-top: 1px;
+}
+
+.form h1
+{
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+}
+
+.field
+{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.field .container-field
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.container-field p
+{
+    font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+}

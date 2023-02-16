@@ -30,6 +30,22 @@ function choixPassager()
     }
 }
 
+function choixMettreÀdisposition()
+{
+    var div = document.getElementById("mettreÀdisposition");
+    var choix = document.getElementById("choix");
+    if(div.style.display === "none")
+    {
+        div.style.display = "block";
+        choix.style.display = "none";
+    }
+    else
+    {
+        div.style.display = "none";
+        choix.style.display = "block";
+    }
+}
+
 function dateExp(event)
 {
     var Date = document.getElementById("expiration");
@@ -85,12 +101,13 @@ function CVC(event)
     {
         if(len >= 3)
         {
-            value = value.substring(0,len-1);
+            event.preventDefault();
         }
+        cvc.value = value;
     }
     else
     {
         event.preventDefault();
     }
-    cvc.value = value;
+    
 }

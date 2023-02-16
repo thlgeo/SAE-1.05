@@ -1,0 +1,104 @@
+.container
+{
+    min-height: 100%;
+    position: relative;
+}
+
+.titre-form
+{
+    background: linear-gradient(90deg,#0DD081, #35A4A6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.title
+{
+    position: absolute;
+    top: 25vh;
+    left: 39vw;
+    font-size: 50px;
+    background: white;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.container .img-container
+{
+    height: 100vh;
+    overflow: hidden;
+}
+
+.form
+{
+    height: 800px;
+    width: 800px;
+    margin-top: 100px;
+    position: relative;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.1);
+    padding-top: 1px;
+}
+
+.form h1
+{
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+}
+
+.field
+{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.field .container-field
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.field p
+{
+    color: #0DD081;
+    margin-top: 50px;
+    margin-left: 20%;   
+    font-size: 19px; 
+    font-weight: 600;
+}
+
+.bouton
+{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 100%;
+    margin-left: 43%;
+    margin-right: auto;
+}
+
+
+.bouton input
+{
+    margin-bottom: 25px;
+    margin-right: 20px;
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: #0058E6;
+    color: white;
+    cursor: pointer;
+    border: none;
+}

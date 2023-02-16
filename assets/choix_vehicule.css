@@ -1,0 +1,100 @@
+.container .titre-form , .container-card
+{
+    margin-top: 50px;
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.container-card .card
+{
+    display: flex;
+    flex-direction: column;
+    height: 480px;
+    width: 250px;
+    background-color: white;
+    margin-left: 50px;
+    border-radius: 25px;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.1);
+    padding-right: 30px;
+    transition: 0.5s;
+}
+.container
+{
+    height: 100%;
+    position:relative;
+    margin-top: 50px;
+}
+.container-card .disabled-card
+{
+    display: flex;
+    flex-direction: column;
+    height: 480px;
+    width: 250px;
+    background-color: lightgray;
+    margin-left: 50px;
+    border-radius: 25px;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.1);
+    padding-right: 30px;
+    transition: 0.5s;
+    
+    
+}
+.disabled-card li
+{
+    list-style: none;
+    font-size: 17px;
+    font-weight: 600;
+    filter: blur(0.1px);
+}
+.card li img
+{
+    border-radius: 25px;
+    height: 250px;
+    width: 270px;
+    transform: translate(-35px,-10px);
+}
+
+.disabled-card li img
+{
+    border-radius: 25px;
+    height: 250px;
+    width: 270px;
+    transform: translate(-35px,-10px);
+    filter: blur(0.1px);
+}
+
+.disabled-card input
+{
+    margin-bottom: 10px;
+    margin-left: 40px;
+    width: 75px;
+    height: 30px;
+    border-radius: 25px;
+    color: white;
+    border: none;
+    background-color: #404751;
+    cursor: pointer;
+    filter: blur(0.1px);
+}
+
+.disabled-card .bandeau
+{
+    display: flex;
+    
+    border-radius: 3px;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #404751;
+    color: white;
+    width: 280px;
+    border: 2px solid white;
+    transform: translate(0px,-200px);
+}
+
+h2{
+    margin-left: 27%;
+}

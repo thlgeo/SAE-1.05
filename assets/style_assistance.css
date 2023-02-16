@@ -15,25 +15,10 @@
 .title
 {
     position: absolute;
-    top: 45vh;
-    left: 20vw;
-    font-size: 52px;
-    background: linear-gradient(90deg,#721109, #B91645);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-}
-
-.img-container .description
-{
-    position: absolute;
-    top: 60vh;
-    font-size: 40px;
-    font-weight: 600;
-    margin-left: 15%;
-    margin-right: auto;
-    text-align: center;
-    background: linear-gradient(-45deg,#ce3900, #f78a56);
+    top: 25vh;
+    left: 42vw;
+    font-size: 50px;
+    background: white;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -45,31 +30,21 @@
     overflow: hidden;
 }
 
-form
+.form
 {
-    height: 600px;
+    height: 800px;
     width: 800px;
     margin-top: 100px;
     position: relative;
     top: 0;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 100px;
     border-radius: 25px;
     box-shadow: 2px 4px 16px rgba(0,0,0,.1);
     padding-top: 1px;
 }
 
-form img
-{
-    height: 150px;
-    width: 300px;
-    position: absolute;
-    right: 50px;
-    bottom: 120px;
-}
-
-form h1
+.form h1
 {
     margin-top: 20px;
     margin-left: 30px;
@@ -111,21 +86,23 @@ form h1
 {
     border-radius: 5px;
     margin-top: 5px;
-    border: 1px solid #d6d6d6;
+    border: 1px solid black;
     height: 20px;
 }
 
-form .bouton
+.form .bouton
 {
-    margin-left: 27%;
+    margin-left: auto;
     margin-right: auto;
     position: absolute;
     bottom: 0;
     width: 100%;
+    margin-left: 35%;
+    margin-right: auto;
 }
 
 
-form .bouton input[type="submit"]
+.form .bouton input
 {
     margin-bottom: 25px;
     margin-right: 20px;
@@ -136,58 +113,15 @@ form .bouton input[type="submit"]
     color: white;
     cursor: pointer;
     border: none;
-    font-size: 14px;
 }
 
 .input-field
 {
     display: flex;
     flex-direction: column;
-    width: 200px;
-}
-.radio-field
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 20%;
-    padding-bottom: 3%;
+    width: 2000px;
 }
 
-.bouton-choix{
-    margin-left: 27px;
-    display: flex;
-    justify-content: center;
-}
-
-.bouton-choix input
-{
-    margin-bottom: 25px;
-    margin-right: 50px;
-    height: 60px;
-    width: 200px;
-    border-radius: 20px;
-    background-color: white;
-    color: black;
-    border: 1px solid #d6d6d6;
-    cursor: pointer;
-    font-size: medium;
-}
-
-#retour
-{
-    margin-right: 20px;
-    border-radius: 25px;
-    background-color: rgb(210, 210, 215);
-    color: black;
-    height: 40px;
-    width: 100px;
-    border: none;
-    font-size: 17px;
-    cursor: pointer;
-}
-
-#retour:hover
-{
-    background: rgb(201, 201, 201);
+.required{
+    color: red;
 }

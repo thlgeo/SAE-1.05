@@ -1,6 +1,6 @@
 .container
 {
-    height: 100%;
+    height: 100vh;
     position: relative;
 }
 
@@ -93,6 +93,8 @@
 .card li img
 {
     border-radius: 25px;
+    height: 250px;
+    width: 183px;
 }
 
 .card input
